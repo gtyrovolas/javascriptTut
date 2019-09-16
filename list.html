@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>List insertion</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+	let list = document.createElement("ol");
+	document.body.append(list);
+
+	let inp = null;
+	while( inp = prompt("Want to add to the list?","")){
+		let temp = document.createElement("li");
+		temp.innerHTML = inp;
+		list.append(temp);
+	}
+</script>
+
+</html>
